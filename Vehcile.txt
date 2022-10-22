@@ -1,0 +1,29 @@
+package com.yitong;
+
+public class Vehcile {
+	double speed;
+	int power;
+	void speedUp(int s) {
+		speed+=s;
+		if(speed>200) {
+			speed=200;
+			System.out.println("速度不能超过200！");
+		}
+	}
+	void speedDown(int d) {
+		speed-=d;
+		if(speed<0) {
+			speed=0;
+			System.out.println("速度不能小于0！");
+		}
+	}
+	void setPower(int p) {
+		power=p;
+	}
+	int getPower() {
+		return power;
+	}
+	double getSpeed() {
+		return speed;
+	}
+}
